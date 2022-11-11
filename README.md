@@ -1,4 +1,4 @@
 # support-desk
-support-desk final prototype (FULL-STACK)
+
  
 # A FULL-STACK IT SUPPORT TICKET APP WITH CUSTOM FEATURES FOR SMALL-BUSINESS
