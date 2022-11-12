@@ -1,0 +1,31 @@
+{
+  "name": "support-desk",
+  "version": "1.0.0",
+  "description": "support-ticket",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikballal/support-desk.git"
+  },
+  "author": "nikballal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikballal/support-desk/issues"
+  },
+  "homepage": "https://github.com/nikballal/support-desk#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
