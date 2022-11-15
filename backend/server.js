@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.json({ message: "Hello" });
+  res.json({ message: "Welcome to the Support Ticket API" });
 });
 
 //Routes
