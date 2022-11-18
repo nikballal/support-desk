@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { FaSignInAlt } from "react-icons/fa";
+import { useSelector, useDispatch } from "react-redux";
+import { login } from "../features/auth/authSlice";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -9,6 +11,17 @@ function Login() {
   });
 
   const { email, password } = formData;
+
+  const dispatch = useDispatch();
+
+  const { user, isLoading, isError, isSuccess } = useSelector(
+    (state) => state.auth
+  );
+
+  const userData = {
+    email,
+    password,
+  };
 
   const onChange = (e) => {
     //since we have multiple input fields, hence we need prevState
@@ -20,6 +33,7 @@ function Login() {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    dispatch(login(userData));
   };
 
   return (
